@@ -1,0 +1,281 @@
+html, body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80px;
+  width: 1440px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid #576974;
+}
+
+.hotels-light {
+  background-color: #FBFBFB;
+}
+.hotels-light div i {
+  color: #576974;
+  height: 16px;
+  width: 16px;
+}
+
+.social-media {
+  position: absolute;
+  left: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hotels-logo {
+  width: 175px;
+  height: 34.863px;
+  flex-shrink: 0;
+}
+
+.search {
+  height: 20px;
+  width: 275px;
+  border: 1px solid #576974;
+  border-radius: 20px;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 144px;
+  position: absolute;
+  right: 64px;
+}
+
+.search p {
+  font-size: 14px;
+  color: #8A9CA7;
+}
+
+.pages {
+  height: 48px;
+  width: 1440px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 48px;
+  padding: 16px 481px;
+}
+.links a {
+  text-decoration: none;
+  color: #8A9CA7;
+}
+.links img {
+  color: #8A9CA7;
+  width: 7px;
+  height: 3px;
+}
+
+.links .catalog {
+  position: relative;
+}
+.links .catalog img {
+  position: absolute;
+  bottom: 7px;
+  left: 60px;
+}
+.links .places {
+  position: relative;
+}
+.links .places img {
+  position: absolute;
+  bottom: 7px;
+  left: 54px;
+}
+
+.hotels-light #about {
+  color: #28353D;
+  font-weight: 600;
+}
+
+.hotels-dark {
+  background-color: #151D20;
+}
+
+.hotels-dark {
+  margin-top: 40px;
+}
+.hotels-dark div i {
+  color: #8A9CA7;
+  height: 16px;
+  width: 16px;
+}
+.hotels-dark #about {
+  color: #FBFBFB;
+  font-weight: 600;
+}
+.hotels-dark .container {
+  border: none;
+}
+
+.gmail-light {
+  background-color: #FBFBFB;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 64px;
+  width: 1440px;
+}
+.gmail-light .frame {
+  position: absolute;
+  left: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.gmail-light .frame img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmail-light .frame .gmail-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  margin-right: 128px;
+}
+.gmail-light .frame .gmail-logo img {
+  width: 42.29px;
+  height: 32px;
+}
+.gmail-light .frame .gmail-search {
+  display: flex;
+  position: relative;
+  height: 32px;
+  width: 749px;
+  padding-left: 16px;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.gmail-light .frame .gmail-search .search-bar {
+  display: flex;
+  width: 126px;
+  height: 32px;
+  font-size: 20px;
+  color: #8A9CA7;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  left: 16px;
+}
+.gmail-light .frame .gmail-search #vector {
+  position: absolute;
+  height: 7px;
+  width: 13px;
+  right: 24px;
+}
+.gmail-light .frame .panel {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.gmail-light .frame .panel img {
+  width: 24px;
+  height: 24px;
+}
+
+.gmail-dark {
+  background-color: #151D20;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 64px;
+  width: 1440px;
+}
+.gmail-dark .frame {
+  position: absolute;
+  left: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.gmail-dark .frame img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmail-dark .frame .gmail-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  margin-right: 128px;
+  color: #FBFBFB;
+}
+.gmail-dark .frame .gmail-logo img {
+  width: 42.29px;
+  height: 32px;
+}
+.gmail-dark .frame .gmail-search {
+  display: flex;
+  position: relative;
+  height: 32px;
+  width: 749px;
+  padding-left: 16px;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.gmail-dark .frame .gmail-search .search-bar {
+  display: flex;
+  width: 126px;
+  height: 32px;
+  font-size: 20px;
+  color: #8A9CA7;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  left: 16px;
+}
+.gmail-dark .frame .gmail-search #vector {
+  position: absolute;
+  height: 7px;
+  width: 13px;
+  right: 24px;
+}
+.gmail-dark .frame .panel {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.gmail-dark .frame .panel img {
+  width: 24px;
+  height: 24px;
+  color: #FBFBFB;
+}
+
+/*# sourceMappingURL=main.css.map */

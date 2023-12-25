@@ -1,0 +1,291 @@
+@import "colors.scss";
+@import "mixins.scss";
+
+$pixels: 16px;
+$black: #000;
+$height: 80px;
+$size: 16px;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+html, body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+.container {
+  height: $height;
+  width: $height * 18;
+  position: relative;
+  @include flex-center;
+  border-bottom: 0.5px solid $gray;
+}
+
+.hotels-light{
+  background-color: $background-white;
+  div {
+    i {
+      color: $gray;
+      height: $size;
+      width: $size;
+    }
+  
+  }
+}
+
+.social-media {
+  position: absolute;
+  left: $size * 4;
+  @include flex-center;
+  gap: $size;
+}
+
+.hotels-logo{
+  width: 175px;
+  height: 34.863px;
+  flex-shrink: 0;
+}
+
+.search{
+  height: 20px;
+  width: 275px;
+  border: 1px solid $gray;
+  border-radius: 20px;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 144px;
+  position: absolute;
+  right: $size * 4;
+}
+
+.search{
+  p{
+    font-size: 14px;
+    color: $blue-gray;
+  }
+}
+
+.pages {
+  height: $size * 3;;
+  width: $height * 18;
+}
+
+.links {
+  @include flex-center;
+  position: relative;
+  gap: $size * 3;
+  padding: 16px 481px;
+  a{
+    text-decoration: none;
+    color: $blue-gray;
+  }
+  img {
+    color: $blue-gray;
+    width: 7px;
+    height: 3px;
+  }
+}
+
+.links{
+  .catalog {
+    position: relative;
+    img{
+      position: absolute;
+      bottom: 7px;
+      left: 60px;
+    }
+  }
+  .places{
+    position: relative;
+    img{
+      position: absolute;
+      bottom: 7px;
+      left: 54px;
+    }
+  
+  }
+}
+.hotels-light{
+    #about {
+    color: $dark-gray;
+    font-weight: 600;
+  }
+}
+
+
+.hotels-dark{
+  background-color: $dark-mode-bg;
+}
+
+.hotels-dark{
+  margin-top: 40px;
+  div {
+    i {
+      color: $blue-gray;
+      height: $size;
+      width: $size;
+    }
+  }
+  #about {
+    color: $background-white;
+    font-weight: 600;
+  }
+  .container{
+    border: none;
+  }
+}
+
+.gmail-light{
+  background-color: $background-white;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: $size * 4;
+  width: $height * 18;
+  .frame {
+    position: absolute;
+
+    left: $size * 4;
+    @include flex-center;
+    gap: 40px;
+    img {
+      width: $size * 1.5;
+      height: $size * 1.5;
+      @include flex-center;
+    }
+    .gmail-logo {
+      display: flex;
+      align-items: center;
+      gap: $size;
+      font-size: $size * 1.5;
+      margin-right: $size * 8;
+      img {
+      width: 42.29px;
+      height: $size * 2;
+    }
+    }
+    .gmail-search {
+      display: flex;
+      position: relative;
+      height: $size * 2;
+      width: 749px;
+      padding-left: $size;
+      .search-bar {
+        display: flex;
+        width: 126px;
+        height: $size * 2;
+        font-size: 20px;
+        color: $blue-gray;
+        align-items: center;
+        gap: $size;
+        position: absolute;
+        left: $size;
+      }
+      #vector {
+        position: absolute;
+        height: 7px;
+        width: 13px;
+        right: $size * 1.5;
+      }
+      border: none;
+      border-radius: 8px;
+      display: inline-flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      background-color: $light-gray;
+    }
+    
+    .panel {
+      display: flex;
+      align-items: center;
+      gap: $size * 1.5;
+      img {
+        width: $size * 1.5;
+        height: $size * 1.5;
+      }
+    }
+  }
+}
+
+.gmail-dark{
+  background-color: $dark-mode-bg;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: $size * 4;
+  width: $height * 18;
+  .frame {
+    position: absolute;
+
+    left: $size * 4;
+    @include flex-center;
+    gap: 40px;
+    img {
+      width: $size * 1.5;
+      height: $size * 1.5;
+      @include flex-center;
+    }
+    .gmail-logo {
+      display: flex;
+      align-items: center;
+      gap: $size;
+      font-size: $size * 1.5;
+      margin-right: $size * 8;
+      color: $background-white;
+      img {
+      width: 42.29px;
+      height: $size * 2;
+    }
+    }
+    .gmail-search {
+      display: flex;
+      position: relative;
+      height: $size * 2;
+      width: 749px;
+      padding-left: $size;
+      .search-bar {
+        display: flex;
+        width: 126px;
+        height: $size * 2;
+        font-size: 20px;
+        color: $blue-gray;
+        align-items: center;
+        gap: $size;
+        position: absolute;
+        left: $size;
+      }
+      #vector {
+        position: absolute;
+        height: 7px;
+        width: 13px;
+        right: $size * 1.5;
+      }
+      border: none;
+      border-radius: 8px;
+      display: inline-flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      background-color: $light-gray;
+    }
+    
+    .panel {
+      display: flex;
+      align-items: center;
+      gap: $size * 1.5;
+      img {
+        width: $size * 1.5;
+        height: $size * 1.5;
+        color: $background-white;
+      }
+    }
+  }
+}
+
